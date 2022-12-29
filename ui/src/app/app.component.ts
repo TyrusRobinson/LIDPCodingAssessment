@@ -18,9 +18,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.subscriptions.push(
-      this.appService.getPosts().subscribe(
-        posts => this.posts = posts
-      )
+        this.appService.getPosts().subscribe(
+            (posts) => this.posts = posts
+        )
     );
   }
 

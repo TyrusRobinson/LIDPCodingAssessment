@@ -45,8 +45,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {MatCurrencyFormatModule} from 'mat-currency-format';
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {AppService} from "./app.service";
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {AppService} from './app.service';
+import {CommentsModule} from './components/comments/comments.module';
 
 @NgModule({
   declarations: [
@@ -102,7 +103,8 @@ import {AppService} from "./app.service";
     RouterModule,
     ScrollingModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    CommentsModule
   ],
   providers: [
     Title,
